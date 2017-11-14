@@ -274,7 +274,7 @@ inline void getTSLValue() {
   lum = tsl.getFullLuminosity();
   ir = lum >> 16;
   full = lum & 0xFFFF;
-  lum_full = full/10000.0;
+  lum_full = full/100.0;
   l = tsl.calculateLux(full, ir);
 }
 
